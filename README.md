@@ -4,3 +4,8 @@ Automation test scripts which simulated the users select different brands and mo
 Method used:
 
 [FindsBy(How = How.Id, Using = "SearchTabs1_MotorsAnchor")]
+
+Waiting element:
+
+WebDriverWait wait = new WebDriverWait(Browser.Driver, new TimeSpan(0, 0, 5));
+wait.Until(ExpectedConditions.ElementIsVisible(By.Id("SearchTabs1_MotorsAnchor")));
